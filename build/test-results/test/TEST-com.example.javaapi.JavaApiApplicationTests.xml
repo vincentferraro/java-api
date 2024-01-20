@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.javaapi.JavaApiApplicationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-01-20T16:56:42" hostname="Vincents-MacBook-Pro.local" time="0.878">
+  <properties/>
+  <testcase name="shouldReturnAnUser()" classname="com.example.javaapi.JavaApiApplicationTests" time="0.835"/>
+  <testcase name="shouldReturnUsers()" classname="com.example.javaapi.JavaApiApplicationTests" time="0.005"/>
+  <testcase name="shouldCreateANewUser()" classname="com.example.javaapi.JavaApiApplicationTests" time="0.035"/>
+  <system-out><![CDATA[11:56:40.509 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.javaapi.JavaApiApplicationTests]: JavaApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:56:40.590 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.javaapi.JavaApiApplication for test class com.example.javaapi.JavaApiApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2024-01-20T11:56:40.868-05:00  INFO 44684 --- [    Test worker] c.e.javaapi.JavaApiApplicationTests      : Starting JavaApiApplicationTests using Java 17.0.8.1 with PID 44684 (started by vincent in /Users/vincent/Desktop/java-api)
+2024-01-20T11:56:40.870-05:00  INFO 44684 --- [    Test worker] c.e.javaapi.JavaApiApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-01-20T11:56:41.307-05:00  INFO 44684 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-20T11:56:41.308-05:00  INFO 44684 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-01-20T11:56:41.321-05:00  INFO 44684 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2024-01-20T11:56:41.330-05:00  INFO 44684 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-20T11:56:41.331-05:00  INFO 44684 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-20T11:56:41.335-05:00  INFO 44684 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-01-20T11:56:41.703-05:00  INFO 44684 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-01-20T11:56:41.712-05:00  INFO 44684 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-20T11:56:41.712-05:00  INFO 44684 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-01-20T11:56:41.761-05:00  INFO 44684 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-20T11:56:41.763-05:00  INFO 44684 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 879 ms
+2024-01-20T11:56:41.865-05:00  INFO 44684 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-20T11:56:42.044-05:00  INFO 44684 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:895089ca-c6dc-4866-8f07-a8690e814d6d user=SA
+2024-01-20T11:56:42.045-05:00  INFO 44684 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-20T11:56:42.079-05:00  INFO 44684 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-20T11:56:42.116-05:00  INFO 44684 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-20T11:56:42.140-05:00  INFO 44684 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-20T11:56:42.288-05:00  INFO 44684 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-20T11:56:42.523-05:00  INFO 44684 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-20T11:56:42.527-05:00  INFO 44684 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-20T11:56:42.559-05:00  WARN 44684 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-20T11:56:42.966-05:00  INFO 44684 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 62079 (http) with context path ''
+2024-01-20T11:56:42.975-05:00  INFO 44684 --- [    Test worker] c.e.javaapi.JavaApiApplicationTests      : Started JavaApiApplicationTests in 2.277 seconds (process running for 3.041)
+2024-01-20T11:56:43.642-05:00  INFO 44684 --- [o-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-20T11:56:43.642-05:00  INFO 44684 --- [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-20T11:56:43.643-05:00  INFO 44684 --- [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+3 , Nah , ghi789
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
